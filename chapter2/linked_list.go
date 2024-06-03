@@ -5,6 +5,9 @@ import (
 )
 
 // LinkedList is a generic linked list that supports operations such as insertion, removal, and searching.
+// - The time complexity of insertion is O(1).
+// - The time complexity of searching is O(n).
+// - The space complexity of this data structure is O(n).
 type LinkedList[T comparable] struct {
 	length int
 	head   *Node[T]
