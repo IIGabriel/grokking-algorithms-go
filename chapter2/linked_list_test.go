@@ -203,7 +203,7 @@ func TestFind(t *testing.T) {
 	if node == nil {
 		t.Errorf("expected node with data 2, got nil")
 	}
-	if node.Data != 2 {
+	if node != nil && node.Data != 2 {
 		t.Errorf("expected data 2, got %d", node.Data)
 	}
 
