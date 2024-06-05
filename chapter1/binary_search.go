@@ -1,9 +1,10 @@
 package chapter1
 
 // BinarySearch performs a binary search on a sorted list of integers to find a target value.
-// - Only works when the list is sorted in ascending order.
-// - Returns the index of the target value if found, otherwise it returns -1.
+// Only works when the list is sorted in ascending order.
+// Returns the index of the target value if found, otherwise it returns -1.
 // - The time complexity of this function is O(log n).
+// - The space complexity of this function is O(1).
 func BinarySearch(data []int, target int) int {
 	low := 0
 	high := len(data) - 1
